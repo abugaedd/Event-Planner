@@ -18,7 +18,7 @@ class MyHomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("Space Exploration Planner"),
+        title: Text("Event Planner"),
       ),
       body: Column(
         children: [
@@ -33,7 +33,7 @@ class TaskList extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Column(
-      children: [ Text("You are this far away from Exploring the whole universe"),
+      children: [ Text("You are this far away from finishing your tasks"),
           LinearProgressIndicator(value: 0,0),
           ],
     );
@@ -44,10 +44,10 @@ class TaskList extends StatelessWidget{
   Widget build(BuildContext context){
     return Column(
       children[
-        TaskItem(label:"1"),
-        TaskItem(label:"2"),
-        TaskItem(label:"3"),
-        TaskItem(label:"4"),
+        TaskItem(label:"Workout"),
+        TaskItem(label:"Run Errands"),
+        TaskItem(label:"Have Lunch"),
+        TaskItem(label:"Go to the Movies"),
       ],  
     );
   }
